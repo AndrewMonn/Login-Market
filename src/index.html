@@ -1,15 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login-market</title>
-  <link rel="stylesheet" href="/dist/output.css">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login-market</title>
+    <link rel="stylesheet" href="/dist/output.css"/>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id="fondo-login">
+    <main class="flex items-center justify-center h-screen">
+      <form>
+        <div class="bg-white w-96 p-6 rounded-lg shadow-2xl bg-opacity-40">
+          <div class="flex items-center justify-center mb-4">
+            <img src="" alt="" />
+          </div>
+          <h2
+          class="font-semibold flex items-center justify-center text-3xl italic"
+          >
+          Iniciar Sesión
+        </h2>
+        <img src="img/pngegg.png" class="mx-9 my-3 w-60 h-40"/>
+        <!-- <div class="bg-rose-500 px-3 py-2 mb-3 rounded text-gray-100 flex items-center justify-center">
+          ¡Usuario o Contraseña inválida!
+        </div> -->
+          <label class="text-gray-700 mx-2 py-2"
+            >Usuario</label
+          >
+          <input
+            class="w-full py-2 bg-gray-50 text-gray-500 px-3 outline-none mb-4 rounded-lg"
+            type="text"
+            placeholder="Usuario"
+          />
+          <label class="text-gray-700 mx-2 py-2"
+            >Contraseña</label
+          >
+          <input
+            class="w-full py-2 bg-gray-50 text-gray-500 px-3 outline-none mb-4 rounded-lg"
+            type="password"
+            placeholder="******"
+          />
+          <div class="my-2">
+            <input id="recuerdame" 
+            class="mb-4 mx-1 rounded-xl" 
+            type="checkbox" />
+            <label for="recuerdame" 
+            class="text-gray-700"> Recuérdame </label>
+          </div>
+          <button type="submit"
+          class="bg-sky-500 w-full text-gray-100 py-2 rounded-lg hover:bg-indigo-500 transition-colors"
+          >
+          Inicio
+        </button>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>

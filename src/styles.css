@@ -1,0 +1,5 @@
+#fondo-login {
+  background-image: url(img/Animated_Shape.svg);
+  background-size: cover;
+  animation: background 0.2s infinite alternate linear;
+}
