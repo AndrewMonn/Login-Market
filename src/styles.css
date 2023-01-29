@@ -3,3 +3,7 @@
   background-size: cover;
   animation: background 0.2s infinite alternate linear;
 }
+
+#mensaje-error {
+  visibility: hidden;
+}

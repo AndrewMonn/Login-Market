@@ -10,7 +10,7 @@
   </head>
   <body id="fondo-login">
     <main class="flex items-center justify-center h-screen">
-      <form>
+      <form action="" id="form-login">
         <div class="bg-white w-96 p-6 rounded-lg shadow-2xl bg-opacity-40">
           <div class="flex items-center justify-center mb-4">
             <img src="" alt="" />
@@ -21,25 +21,32 @@
           Iniciar Sesión
         </h2>
         <img src="img/pngegg.png" class="mx-9 my-3 w-60 h-40"/>
-        <!-- <div class="bg-rose-500 px-3 py-2 mb-3 rounded text-gray-100 flex items-center justify-center">
+        <div id="error-message" 
+        class="bg-red-500 bg-opacity-80 px-3 py-2 mb-3 rounded text-gray-100 flex items-center justify-center">
           ¡Usuario o Contraseña inválida!
-        </div> -->
+        </div>
           <label class="text-gray-700 mx-2 py-2"
             >Usuario</label
           >
-          <input
+          <input id="user-login"
             class="w-full py-2 bg-gray-50 text-gray-500 px-3 outline-none mb-4 rounded-lg"
             type="text"
             placeholder="Usuario"
+            minlength="4"
+            pattern="[A-Za-z0-9]+"
+            required
           />
-          <label class="text-gray-700 mx-2 py-2"
+            <label class="text-gray-700 mx-2 py-2"
             >Contraseña</label
-          >
-          <input
+            >
+            <input id="password-login"
             class="w-full py-2 bg-gray-50 text-gray-500 px-3 outline-none mb-4 rounded-lg"
             type="password"
             placeholder="******"
-          />
+            minlength="4"
+            pattern="[A-Za-z0-9]+"
+            required
+            />
           <div class="my-2">
             <input id="recuerdame" 
             class="mb-4 mx-1 rounded-xl" 
@@ -47,7 +54,7 @@
             <label for="recuerdame" 
             class="text-gray-700"> Recuérdame </label>
           </div>
-          <button type="submit"
+          <button id="button-login" type="submit"
           class="bg-sky-500 w-full text-gray-100 py-2 rounded-lg hover:bg-indigo-500 transition-colors"
           >
           Inicio
@@ -55,5 +62,6 @@
         </div>
       </form>
     </main>
+    <script src="main.js" type="module"></script>
   </body>
 </html>
