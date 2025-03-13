@@ -101,6 +101,6 @@
   },
   "keywords": [],
   "author": "Andres Luna <andrewmonn.dev@gmail.com>",
-  "license": "ISC",
-  "description": ""
+  "license": "MIT",
+  "description": "Login page made with Tailwind.css"
 }
